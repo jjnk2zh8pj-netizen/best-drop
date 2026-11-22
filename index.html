@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Best Drop</title>
+    <!-- Подключаем Telegram WebApp API -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <div class="logo">BEST<span>DROP</span></div>
+        <div class="header-controls">
+            <div class="balance-pill">
+                <span>♦</span> 12 450 <div class="plus">+</div>
+            </div>
+            <div class="tg-status">
+                <span>✈️</span> Telegram <span class="dot">●</span>
+            </div>
+            <img src="https://i.pravatar.cc/100?img=11" alt="avatar" class="avatar">
+        </div>
+    </header>
+
+    <!-- Баннер -->
+    <section class="banner">
+        <div class="banner-inner">
+            <div class="banner-title">BEST<br><span>DROP</span></div>
+            <div class="banner-desc">Открывай кейсы —<br>получай крутые скины!</div>
+            <button class="btn-main" onclick="openCase('banner')">Открыть кейс ></button>
+        </div>
+    </section>
+
+    <!-- Заголовок кейсов -->
+    <div class="section-header">
+        <div class="section-title">📦 Наши кейсы</div>
+        <button class="btn-all">Все кейсы ></button>
+    </div>
+
+    <!-- Сетка кейсов -->
+    <section class="cases-grid">
+        <!-- Кейс 1 -->
+        <div class="case-card">
+            <img src="sandstone.jpg" alt="Sandstone" class="case-img" onerror="this.src='https://via.placeholder.com/300x200/333/fff?text=Sandstone'">
+            <div class="case-content">
+                <div class="case-name">SANDSTONE</div>
+                <div class="case-sub">Песчаная коллекция</div>
+                <div class="case-price-row">
+                    <div class="price-tag">♦ 99</div>
+                    <button class="btn-open" onclick="openCase('Sandstone')">Открыть</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Кейс 2 -->
+        <div class="case-card">
+            <img src="breeze.jpg" alt="Breeze" class="case-img" onerror="this.src='https://via.placeholder.com/300x200/333/fff?text=Breeze'">
+            <div class="case-content">
+                <div class="case-name">BREEZE</div>
+                <div class="case-sub">Тропическая коллекция</div>
+                <div class="case-price-row">
+                    <div class="price-tag">♦ 149</div>
+                    <button class="btn-open" onclick="openCase('Breeze')">Открыть</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Кейс 3 -->
+        <div class="case-card">
+            <img src="dune.jpg" alt="Dune" class="case-img" onerror="this.src='https://via.placeholder.com/300x200/333/fff?text=Dune'">
+            <div class="case-content">
+                <div class="case-name">DUNE</div>
+                <div class="case-sub">Золотая коллекция</div>
+                <div class="case-price-row">
+                    <div class="price-tag">♦ 199</div>
+                    <button class="btn-open" onclick="openCase('Dune')">Открыть</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Нижние ссылки -->
+    <section class="quick-links">
+        <div class="quick-card">
+            <div class="quick-info"><h4>Рулетка</h4><p>Испытай удачу!</p></div>
+            <span>></span>
+        </div>
+        <div class="quick-card">
+            <div class="quick-info"><h4>Инвентарь</h4><p>Твои скины</p></div>
+            <span>></span>
+        </div>
+        <div class="quick-card">
+            <div class="quick-info"><h4>Профиль</h4><p>Статистика и настройки</p></div>
+            <span>></span>
+        </div>
+    </section>
+
+    <!-- Нижнее меню -->
+    <nav class="bottom-nav">
+        <div class="nav-item active"><span>🏠</span>Главная</div>
+        <div class="nav-item"><span>📦</span>Кейсы</div>
+        <div class="nav-item"><span>🎡</span>Рулетка</div>
+        <div class="nav-item"><span>🎒</span>Инвентарь</div>
+        <div class="nav-item"><span>👤</span>Профиль</div>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>
