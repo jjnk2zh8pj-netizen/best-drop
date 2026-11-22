@@ -1,0 +1,7 @@
+// Генерируем 30 случайных скинов для фона
+for (let i = 0; i < 30; i++) {
+    const randItem = pool[Math.floor(Math.random() * pool.length)];
+    // Вот эта строка отвечает за заглушку, если картинки нет
+    const imgSrc = randItem.img || 'https://via.placeholder.com/100x100/333/fff?text=Skin'; 
+    stripHTML += `<div class="roulette-item"><img src="${imgSrc}" alt="skin"><span>${randItem.price} ♦</span></div>`;
+}
