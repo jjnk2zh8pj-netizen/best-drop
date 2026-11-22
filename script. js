@@ -1,0 +1,10 @@
+// Генерируем 50 случайных скинов
+    for (let i = 0; i < 50; i++) {
+        const randItem = pool[Math.floor(Math.random() * pool.length)];
+        stripHTML += `<div class="roulette-item"><img src="${randItem.img}"><span>${randItem.price} ♦</span></div>`;
+    }
+    
+    // 51-м элементом ставим выпавший скин
+    stripHTML += `<div class="roulette-item"><img src="${currentDrop.img}"><span style="color:#ff0000; font-weight:bold;">${currentDrop.price} ♦</span></div>`;
+    
+    strip.innerHTML = stripHTML;
